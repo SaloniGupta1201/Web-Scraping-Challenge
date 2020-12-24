@@ -34,11 +34,12 @@ The output looks as follows:
 ![Facts_Table image](./Images/Facts_Table.jpg)
 </br>
 HTML
+
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
-      <th>Fact</th>
-      <th>Fact Value</th>
+    <tr style="text-align: center;">
+      <th>Description</th>
+      <th>Mars</th>
     </tr>
   </thead>
   <tbody>
