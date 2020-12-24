@@ -95,3 +95,5 @@ Finally, created a template HTML file called index.html that take the mars data 
 
 ![Browser page image](./Images/Screenshot1.jpg)
 ![Browser page2 image](./Images/Screenshot2.jpg)
+
+![Browser page3 image](./Images/Mission-to-Mars.pdf)
