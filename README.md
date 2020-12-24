@@ -27,12 +27,9 @@ Paragraph:  Vast areas of the Martian night sky pulse in ultraviolet light, acco
 
 https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA19330_hires.jpg
 
-#### Mars Facts
+### Mars Facts
 - Visited the Mars Facts webpage here and used Pandas to scrape the table containing facts about the planet including Diameter, Mass, etc and converted the data to a HTML table string.
 The output looks as follows:
-
-![Facts_Table image](./Images/Facts_Table.jpg)
-</br>
 HTML
 
 <table border="1" class="dataframe">
