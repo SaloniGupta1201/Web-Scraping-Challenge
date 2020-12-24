@@ -1,4 +1,4 @@
-# Web-Scraping-Challenge -  Web Scraping - Mission to Mars </br>
+# Web-Scraping-Challenge - Mission to Mars </br>
  **Submitted By:** Saloni Gupta\
 _Date_: december, 23rd, 2020 
  
@@ -30,7 +30,6 @@ https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA19330_hires.jpg
 ### Mars Facts
 - Visited the Mars Facts webpage here and used Pandas to scrape the table containing facts about the planet including Diameter, Mass, etc and converted the data to a HTML table string.
 The output looks as follows:
-HTML
 
 <table border="1" class="dataframe">
   <thead>
@@ -78,7 +77,8 @@ HTML
     </tr>
   </tbody>
 </table>
-#### Mars Hemispheres
+
+### Mars Hemispheres
 - Visited the USGS Astrogeology site here, and obtained high resolution images for each of Mar's hemispheres.
 
 - Clicked each of the links to the hemispheres in order to find the image url to the full resolution image. Then, saved both the image url string for the full resolution hemisphere image, and the Hemisphere title containing the hemisphere name, and stored in the a Python dictionary by using the keys img_url and title.
@@ -86,12 +86,12 @@ HTML
 ### Step 2 - MongoDB and Flask Application
 Used MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs. Then after, converted the Jupyter notebook into a Python script called scrape_mars.py with a function called scrape that will execute all of the scraping code from above and return one Python dictionary containing all of the scraped data.
 
-- Next, I created a route called /scrape that will import scrape_mars.py script and call scrape function.
+- Next, I created a route called /scrape that will import [scrape_mars.py](./Mission_to_Mars/scrape_mars.py) script and call scrape function.
   Stored the returned values in Mongo as a Python dictionary.
 
 - Created a root route / that will query the Mongo database and pass the mars data into an HTML template to display the data.
 
-Finally, created a template HTML file called index.html that take the mars data dictionary, and displayed all of the data in the appropriate HTML elements. The final display looks as below:
+Finally, created a template HTML file called [index.html](./Mission_to_Mars/templates/index.html) that take the mars data dictionary, and displayed all of the data in the appropriate HTML elements. The final display looks as below:
 
 ![Browser page image](./Images/Screenshot4.jpg)
-![Browser page2 image](./Images/Screenshot5.jpg)
+![Browser page2 image](./Images/Screenshot2.jpg)
