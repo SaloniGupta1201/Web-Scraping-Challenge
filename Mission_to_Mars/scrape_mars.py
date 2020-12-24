@@ -52,17 +52,20 @@ def get_news_mars(browser):
 # JPL Mars Space Images - Featured Image scraping function
 def get_featured_image(browser):
     # URL of NASA Mars site, JPL Featured Space Images page to be scraped
-    base_url = 'https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'
+    mar_space_images_url = 'https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'
    # mar_space_images_url = base_url + '/spaceimages/?search=&category=Mars'
-    browser.visit(base_url)
+    browser.visit(mar_space_images_url)
+    time.sleep(1)
 
     # Find and Click "FULL IMAGE" button
     full_image_data = browser.find_by_id('full_image')
     full_image_data.click()
+    time.sleep(1)
 
     # Find and Click 'more info' button, wait a second
     more_info_data = browser.links.find_by_partial_text('more info')
     more_info_data.click()
+    time.sleep(1)
 
     # Find the actual website path we are going to scrape and read/show the data using BeautifulSoup
     html = browser.html
