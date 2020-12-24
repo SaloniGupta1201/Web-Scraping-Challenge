@@ -10,9 +10,6 @@ from bs4 import BeautifulSoup as bs
 import datetime as dt
 import time
 
-# Initialize return dictionary
-#datapage = {}
-
 def scrape_all():
 
   # Create the exe path for chrome to open chrome page and will open a chrome window
@@ -74,6 +71,7 @@ def get_featured_image(browser):
     # Find featured_image_url large size 
     try: 
         featured_image_url = soup.find('figure', class_='lede').a['href']
+        featured_image_url
         #print(f"The featured_image_url is: {featured_image_url}") 
     except AttributeError:
         return None
