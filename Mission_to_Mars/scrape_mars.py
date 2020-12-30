@@ -53,7 +53,6 @@ def get_news_mars(browser):
 def get_featured_image(browser):
     # URL of NASA Mars site, JPL Featured Space Images page to be scraped
     mar_space_images_url = 'https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'
-   # mar_space_images_url = base_url + '/spaceimages/?search=&category=Mars'
     browser.visit(mar_space_images_url)
     time.sleep(1)
 

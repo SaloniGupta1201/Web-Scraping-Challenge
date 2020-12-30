@@ -10,8 +10,6 @@ app = Flask(__name__)
 client = pymongo.MongoClient('mongodb://localhost:27017')
 db = client.mars_db
 collection = db.mars
-#app.config["MONGO_URI"] = "mongodb://localhost:27017/mars_db"
-#mongo = pymongo(app)
 
 # 4. Define what to do when a user hits the /index route
 @app.route("/")
